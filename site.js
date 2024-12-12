@@ -18,5 +18,5 @@ const renderTodos = todos.map(( todos ) => {
 button.addEventListener('click', () => {
     todos.push({ text: input.value, completed: false })
     localStorage.setItem('todo-list', JSON.stringify(todos))
-    
+    location.reload();
 })
